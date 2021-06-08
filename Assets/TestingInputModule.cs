@@ -39,7 +39,7 @@ public class TestingInputModule : StandaloneInputModule
     {
         if (manualTest.RecordedInputs == null || manualTest.RecordedInputs.Count == 0)
         {
-            OnPlaybackEnd.Invoke();
+            onEnd?.Invoke();
             return;
         }
 

@@ -54,9 +54,8 @@ public class TestingService : MonoBehaviour
     public void Playback()
     {
         if (ManualTest == null) return;
-
-        TestingInputModule.StartPlayback(ManualTest, OnPlaybackEnd);
         Debug.Log("Playback started");
+        TestingInputModule.StartPlayback(ManualTest, OnPlaybackEnd);
     }
 
     void OnPlaybackEnd()
